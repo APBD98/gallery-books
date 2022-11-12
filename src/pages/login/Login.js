@@ -1,6 +1,6 @@
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import React, { useState } from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router'
 import { Link } from 'react-router-dom'
 import { auth } from '../../config/firebase/firebase'
@@ -14,6 +14,7 @@ export default function Login() {
   const navigate = useNavigate();
 
   const logo = useSelector((state) => state.user.logo)
+  const dispatch = useDispatch();
 
   const handleLogin = (e) =>{
     e.preventDefault();
