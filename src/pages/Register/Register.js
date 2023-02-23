@@ -23,13 +23,21 @@ export default function Register() {
     }
   }
   return (
-    <div className='register-page' style={{ backgroundImage: `url(${background})`,backgroundRepeat: 'no-repeat',height:'100vh',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat' }}>
+    <div className='register-page' 
+    style={{ 
+      backgroundImage: `url(${background})`,
+      backgroundRepeat: 'no-repeat',
+      height:'100vh',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      position:'absolute',
+      top:'0',
+      left:'0',
+      right:'0', }}>
       <div className="logo">
         <h1>AZ</h1>
       </div>
-      <div className="card-register">
+      <div className="login-form">
         <p>Welcome</p>
         <input className='email' id='email' type="text" placeholder='email' onChange={(e) => {
           setEmail(e.target.value)}}/>

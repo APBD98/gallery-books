@@ -31,9 +31,17 @@ export default function Login() {
     });
   }
   return (
-    <div className='login-page' style={{ backgroundImage: `url(${background})`,backgroundRepeat: 'no-repeat',height:'100vh',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat' }}>
+    <div className='login-page' 
+    style={{ 
+      backgroundImage: `url(${background})`,
+      backgroundRepeat: 'no-repeat',
+      height:'100vh',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      position:'absolute',
+      top:'0',
+      left:'0',
+      right:'0', }}>
       <div className="logo">
         <h1>AZ</h1>
       </div>
